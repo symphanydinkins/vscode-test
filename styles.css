@@ -43,12 +43,48 @@ animation: colorChange 2s infinite;
 /* ========================= */
 /* EASE ANIMATION */
 /* ========================= */
-/* Paste the code here */
+.tinker_bell {
+  animation: bounce 1s linear infinite;
+}
 /* ========================= */
-/* SPIN ANIMATION */
+/* <div className="sensei">
+  <img src="sensei.png" alt="club penguin gray sensei penguin" />
+</div>
+/* spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sensei {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: spin 1s linear infinite;
+}
 /* ========================= */
-/* Paste the code here */
-/* ========================= */
-/* HOVER ANIMATION */
-/* ========================= */
-/* Paste the code here */
+/* <div className="sensei">
+  <img src="sensei.png" alt="club penguin gray sensei penguin" />
+</div>
+/* bouncing animation (floating)  */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.sensei {
+  animation: bounce 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
